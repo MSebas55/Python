@@ -1,16 +1,13 @@
-from datetime import datetime
+import datetime as dt
 
-# Obtener la fecha actual
-fecha_actual = datetime.now()
+todayDate = dt.datetime.today()
 
-# Pedir al usuario que introduzca una fecha
-fecha_ingresada_str = input("Introduce una fecha en formato DD/MM/YYYY: ")
+dia = int(input("En que dia naciste?\n"))
+mes = int(input("En que mes naciste?\n"))
+anio = int(input("En que año naciste?\n"))
 
-# Convertir la cadena de fecha ingresada a un objeto datetime
-fecha_ingresada = datetime.strptime(fecha_ingresada_str, "%d/%m/%Y")
+fechaNueva = dt.datetime(anio, mes, dia)
 
-# Calcular la diferencia en días
-diferencia_en_dias = (fecha_actual - fecha_ingresada).days
+fechaResta = todayDate - fechaNueva
 
-# Mostrar el resultado
-print(f"La diferencia en días entre {fecha_ingresada_str} y hoy es: {diferencia_en_dias} días.")
+print(fechaResta.days)

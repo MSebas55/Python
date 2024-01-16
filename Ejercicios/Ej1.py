@@ -1,17 +1,15 @@
 import random
 
-# Generar un número aleatorio entre 1 y 100
-numero_secreto = random.randint(1, 100)
+aleatorio = random.randint(1, 100)
+exito = False
 
-while True:
-    # Pedir al usuario que ingrese un número
-    intento = int(input("Adivina el número entre 1 y 100: "))
-
-    # Comprobar si el número es el correcto
-    if intento == numero_secreto:
-        print("¡Adivinaste! ¡Ese era el número secreto!")
-        break
-    elif intento < numero_secreto:
-        print("Intenta con un número más grande.")
+while not exito:
+    numero = int(input("Introduce un numero entre 1 y 100:"))
+    if numero == aleatorio:
+        exito = True
+    elif numero > aleatorio:
+        print("Apunta mas bajo")
     else:
-        print("Intenta con un número más pequeño.")
+        print("Apunta mas alto")
+
+print("Acertado. Enhorabuena")

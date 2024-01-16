@@ -1,8 +1,7 @@
-# Pedir al usuario que introduzca una cadena de caracteres
-cadena_original = input("Introduce una cadena de caracteres: ")
+# Obtener la representación inversa de una cadena de caracteres introducida por el usuario (sin usar arrays)
+cadena = input("Introduce una cadena:")
+cadenaInversa = ""
 
-# Obtener la representación inversa
-cadena_inversa = cadena_original[::-1]
-
-# Mostrar el resultado
-print(f"La representación inversa de '{cadena_original}' es '{cadena_inversa}'.")
+for i in range(len(cadena)-1, -1, -1):
+    cadenaInversa += cadena[i]
+print(cadenaInversa)

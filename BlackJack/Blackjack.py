@@ -52,6 +52,7 @@ def jugar_21():
     mostrar_mano(mano_casa)
 
     # Determinar el ganador
+    print("")
     puntuacion_jugador = calcular_puntuacion(mano_jugador)
     puntuacion_casa = calcular_puntuacion(mano_casa)
     print(f"Tu puntuación: {calcular_puntuacion(mano_jugador)}")
