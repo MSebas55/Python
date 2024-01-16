@@ -1,3 +1,4 @@
+# Acertar un número aleatorio entre 1 y 100
 import random
 
 aleatorio = random.randint(1, 100)

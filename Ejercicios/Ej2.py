@@ -1,3 +1,4 @@
+# Introducir una fecha y que nos muestre la diferencia en días desde hoy
 import datetime as dt
 
 todayDate = dt.datetime.today()

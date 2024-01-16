@@ -2,6 +2,6 @@
 cadena = input("Introduce una cadena:")
 cadenaInversa = ""
 
-for i in range(len(cadena)-1, -1, -1):
+for i in range(len(cadena) - 1, -1, -1):
     cadenaInversa += cadena[i]
 print(cadenaInversa)
