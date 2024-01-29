@@ -1,25 +1,16 @@
-import os
+# archivo = open("texto.txt", "x")
+# archivo.write("Añado contenido")
+# archivo.close()
+#
+# archivo = open("texto.txt", "r")
+# print(archivo.read())
 
-ruta = r'C:\Users\Alumno\Documents\GitHub\Python'
+def create_name_list():
+    file_lista_nombres = open("lista_nombre.txt", "wt")
 
-print(f"Ruta: {ruta}")
-ejecutables_escritorio = os.listdir(ruta)
-print(ejecutables_escritorio)
-archivos = []
-directorios = []
 
-for f in ejecutables_escritorio:
-    nombre_archivo = os.path.join(ruta, f)
-    if os.path.isfile(nombre_archivo):
-        archivos.append(f)
-    elif os.path.isdir(nombre_archivo):
-        directorios.append(f)
-    else:
-        print("Rareza")
+def fill_name_list():
+    print("")
 
-print(f"Archivos: {archivos}")
-print(f"Directorios: {directorios}")
 
-for a in archivos:
-    archivo_legible = open(a, "r")
-    print(archivo_legible.read())
+create_name_list()
