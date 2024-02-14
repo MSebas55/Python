@@ -55,7 +55,6 @@ def cargarusuarios():
 
 def iniciosesion(usuarios):
     nombre = input("Nombre de usuario: ")
-
     if nombre not in usuarios:
         print("El usuario no existe, regístrese primero")
         return
